@@ -4,7 +4,6 @@ import { useParams, useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { updateMilestone } from "../store/milestonesSlice";
 import "./modal.css";
-
 const API = process.env.REACT_APP_API || "http://localhost:5000/api";
 
 export default function MilestoneDetail({ onClose }) {
