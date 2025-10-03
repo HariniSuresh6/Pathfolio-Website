@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 import "./modal.css";
 
 export default function NewMilestone({ onClose }) {
-  const [form, setForm] = useState({ title: "", date: "", description: "", tags: "", image: null });
+  const [form, setForm] = useState({ title: "", date: "", description: "", tags: "" });
   const dispatch = useDispatch();
   const nav = useNavigate();
 
@@ -57,12 +57,6 @@ export default function NewMilestone({ onClose }) {
             onChange={(e) => setForm({ ...form, tags: e.target.value })}
           />
 
-          <input
-            type="file"
-            accept="image/*"
-            onChange={handleImageChange}
-            className="image-upload"
-          />
 
           <button type="submit" className="submit-btn">Add Milestone</button>
         </form>
