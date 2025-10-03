@@ -1,38 +1,76 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+/* General container */
+.app-container {
+  font-family: 'Inter', sans-serif;
+  background: url("https://img.freepik.com/premium-photo/purple-flowers-dark-background-with-green-leaves_853645-773.jpg") no-repeat center center fixed;
+  background-size: cover; /* Makes sure image covers entire viewport */
   min-height: 100vh;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+.app-header {
+  position: sticky;
+  top: 0;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 15px 40px;
+  background: rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  z-index: 100;
 }
 
-.App-link {
-  color: #61dafb;
+/* Logo */
+.logo {
+  font-size: 1.8rem;
+  font-weight: 800;
+  background: linear-gradient(90deg, #f472b6, #c084fc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Navigation links */
+.nav-links {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.nav-links a {
+  color:rgb(220, 42, 185);
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #34d399;
+  transform: scale(1.05);
+}
+
+/* Add Milestone button in nav */
+.add-btn {
+  padding: 8px 15px;
+  background: linear-gradient(90deg, #34d399, #10b981);
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.add-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(16,185,129,0.6);
+}
+
+/* Main content */
+.app-main {
+  padding: 30px 40px;
+  max-width: 1200px;
+  margin: auto;
 }
