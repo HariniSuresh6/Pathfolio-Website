@@ -97,14 +97,6 @@ export default function MilestoneDetail({ onClose }) {
             className="image-upload"
           />
 
-          {imagePreview && (
-            <img
-              src={imagePreview}
-              alt="Preview"
-              className="image-preview"
-            />
-          )}
-
           <button type="submit" className="submit-btn">
             Save Changes
           </button>
